@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Assistive Technology for PWDs | Free Learning Tools</title>
+  <meta name="description"
+    content="A free, interactive web application offering assistive technology tools for Persons with Disabilities (PWDs). Explore our AAC board, Braille keyboard, lip-reading assistant, and more to improve learning and engagement.">
+  <meta name="keywords"
+    content="assistive technology, PWD, disabilities, free learning tools, AAC board, virtual assistant, autism, blind, deaf, accessibility">
+  <link rel="icon" type="image" href="../PICTURE/ABD.png">
+  <!-- SEO: Organization Structured Data -->
+  <script type="application/ld+json">
+  </script>
+  <!-- style.css linking here -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../shared/preloader.css">
+  <link rel="stylesheet" href="../shared/back-to-top.css">
+
+  <!-- font family linking here -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- font-awesome.min.css linking here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* --- Beautiful System Enhancements --- */
+
+    /* Header text shadow for better readability */
+    .text-box h1 {
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Enhanced Hero Button */
+    .hero-btn {
+      background-image: linear-gradient(45deg, #0a6522, #2ecc71);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Enhanced Team Member Cards */
+    .team-member {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      overflow: hidden;
+      /* Ensures image corners are rounded */
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .team-member img {
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover img {
+      transform: scale(1.05);
+    }
+
+    .team-member .member-info {
+      background-color: #fff;
+      /* Ensure background is white */
+      z-index: 2;
+      /* Keep text above image on hover */
+    }
+
+    /* --- Animate on Scroll --- */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .animate-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* --- Enhanced Mobile Navigation --- */
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 70%;
+        height: 100vh;
+        text-align: center;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-list {
+        flex-direction: column;
+        padding-top: 4rem;
+      }
+
+      .nav-item {
+        margin: 1.5rem 0;
+      }
+
+      .hamburger {
+        display: block;
+        z-index: 1001;
+      }
+
+      body.no-scroll {
+        overflow: hidden;
+      }
+    }
+
+    /* --- "What's New" Section Three-Column Layout --- */
+    @media (min-width: 992px) {
+      #whats-new .team-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        /* Adjust gap as needed */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader Start -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- header section strt -->
+  <section class="header" id="header">
+    <!-- nav strt -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="./index.html">
+          <img src="../PICTURE/PWDs 1.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link contact-btn active">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="../ASSISTIVE TECHNOLOGY/Category.html" class="nav-link contact-btn ">ASSISTIVE TECHNOLOGY</a>
+            <div class="dropdown-content">
+              <a href="../ASSISTIVE TECHNOLOGY/AUTISM CARD/AUTISM.html">AUTISM</a>
+              <a href="../ASSISTIVE TECHNOLOGY/BLIND CARD/BLIND.html">BLIND</a>
+              <a href="../ASSISTIVE TECHNOLOGY/DEAF/DEAF.html">DEAF</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="../ABOUT/About.html" class="nav-link contact-btn ">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="../CONTACT/Contact.html" class="nav-link contact-btn ">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <div class="text-box">
+      <h1>CREATING AN INTERACTIVE ASSISTIVE TECHNOLOGY APPLICATION TO IMPROVE LEARNING OUTCOMES AND ENGAGEMENT FOR
+        PERSONS WITH DISABILITIES</h1>
+      <p>Rapidly evolving, offering tools that enhance independence and improve quality of life by automating <br>tasks,
+        providing access to information, and facilitating communication.</p>
+      <a href="../ASSISTIVE TECHNOLOGY/Category.html" class="hero-btn">Visit Us To Know More</a>
+    </div>
+  </section>
+  <!-- header section end -->
+
+  <!-- ...existing code... -->
+
+
+  <!-- Mission and Vision Section Start -->
+  <!-- Mission & Vision Section -->
+  <section class="mission-vision-section" id="mission-vision">
+    <div class="container">
+      <div class="mission-vision-grid animate-on-scroll">
+        <div class="vision-card" data-aos="flip-left">
+          <div class="card-inner">
+            <div class="card-front">
+              <i class="fas fa-eye"></i>
+              <h2>Our Vision</h2>
+            </div>
+            <div class="card-back">
+              <p>Our vision is a future where Persons with Disabilities have equal access to opportunities, resources,
+                and social connections through innovative technology.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-card" data-aos="flip-right">
+          <div class="card-inner">
+            <div class="card-front">
+              <i class="fas fa-bullseye"></i>
+              <h2>Our Mission</h2>
+            </div>
+            <div class="card-back">
+              <p>To develop and implement innovative assistive technologies that empower PWDs, fostering independence
+                and improving quality of life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Mission and Vision Section End -->
+
+  <!-- What's New Section Start -->
+  <section class="our-team-section" id="whats-new">
+    <div class="container">
+      <div class="main-title animate-on-scroll">
+        <h1>What's New</h1>
+        <p>Check out our latest features designed to empower our users.</p>
+      </div>
+      <div class="team-row">
+        <!-- Feature 1: Visual Scheduler -->
+        <div class="team-member animate-on-scroll">
+          <img src="../ASSISTIVE TECHNOLOGY/VSCHED/VSAUTISM.png" alt="Visual Scheduler">
+          <div class="member-info">
+            <h3>Visual Scheduler</h3>
+            <p>Organize daily routines with a customizable, picture-based schedule.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Text-to-Vibration -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.1s;">
+          <img src="../ASSISTIVE TECHNOLOGY/BLIND CARD/TVA2025.png" alt="Text-to-Vibration System">
+          <div class="member-info">
+            <h3>Text-to-Vibration</h3>
+            <p>Convert text into vibration patterns for tactile communication.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3: AAC Board -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.3s;">
+          <img src="../PICTURE/AACPIC.png" alt="AAC Communication Board">
+          <div class="member-info">
+            <h3>AAC Communication Board</h3>
+            <p>Empowers non-verbal users to communicate with picture-based tiles.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Braille Learning Tool -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.4s;">
+          <img src="../ASSISTIVE TECHNOLOGY/BRAILLE (PICTURE)/SAVE2.jpg" alt="Braille Learning Tool">
+          <div class="member-info">
+            <h3>Braille Learning Tool</h3>
+            <p>An interactive tool to learn and practice Braille with instant feedback.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Lip-Reading Assistant -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.5s;">
+          <img src="../ASSISTIVE TECHNOLOGY/DEAF/Lip Reading.png" alt="Lip-Reading Assistant">
+          <div class="member-info">
+            <h3>Lip-Reading Assistant</h3>
+            <p>An AI-powered tool to help users practice and improve lip-reading skills.</p>
+          </div>
+        </div>
+
+        <!-- Feature 6: Sign Language Translator -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.6s;">
+          <img src="../ASSISTIVE TECHNOLOGY/DEAF LOGO.png" alt="Sign Language Translator">
+          <div class="member-info">
+            <h3>Sign Language Translator</h3>
+            <p>A real-time translator for converting sign language into text or speech.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- What's New Section End -->
+
+  <!-- Testimonials Section Start -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="main-title animate-on-scroll">
+        <h1>What Our Users Say</h1>
+        <p>Real stories from the community we serve.</p>
+      </div>
+      <div class="testimonial-row animate-on-scroll">
+        <div class="testimonial-card">
+          <img src="../ASSISTIVE TECHNOLOGY/AUSTIM (PICTURE)/ACTIVITY_COMPANION.png" alt="Parent of a user">
+          <p>"The Visual Scheduler has been a game-changer for our daily routine. It has reduced anxiety and brought so
+            much predictability for my son. Thank you!"</p>
+          <h4>- A Grateful Parent</h4>
+        </div>
+        <div class="testimonial-card" style="transition-delay: 0.2s;">
+          <img src="../ASSISTIVE TECHNOLOGY/DEAF 2025 (PICTURE)/DEAF.png" alt="Educator">
+          <p>"I use the AAC board with my non-verbal students. It's intuitive, and seeing them express their thoughts is
+            incredibly rewarding. A fantastic free resource."</p>
+          <h4>- Special Education Teacher</h4>
+        </div>
+        <div class="testimonial-card" style="transition-delay: 0.4s;">
+          <img src="../PICTURE/DEAF.png" alt="User">
+          <p>"Learning Braille felt daunting, but the interactive keyboard made it fun and easy to practice. I feel more
+            confident every day."</p>
+          <h4>- Alex, User</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section End -->
+
+
+
+  <!-- Skill Section End -->
+  <!-- Our Team Section Start -->
+  <section class="our-team-section" id="our-team">
+    <div class="container">
+      <div class="main-title animate-on-scroll">
+        <h1>Our Team</h1>
+        <p>Meet the talented individuals who make everything possible.</p>
+      </div>
+      <div class="team-row">
+        <!-- Team Member 1 -->
+        <div class="team-member animate-on-scroll">
+          <img src="../TEAM/JUAN.png" alt="Team Member 1">
+          <div class="member-info">
+            <h3>Juan Gabriel Manalastas</h3>
+            <p>PROGRAMMER / RESEARCHER</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.1s;">
+          <img src="../TEAM/JDO2.png" alt="Team Member 2">
+          <div class="member-info">
+            <h3>Joannalyn Dulay</h3>
+            <p>DESIGNER</p>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member animate-on-scroll" style="transition-delay: 0.2s;">
+          <img src="../TEAM/VM3.png" alt="Team Member 3">
+          <div class="member-info">
+            <h3>Vicente Miguel Reveza</h3>
+            <p>SUPPPORTER</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Our Team Section End -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#whats-new">What's New</a></li>
+            <li><a href="#mission-vision	">Mission and Vision</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="../HOME/index.html">Home</a></li>
+            <li><a href="../ASSISTIVE TECHNOLOGY/Category.html">Assistive Technology</a></li>
+            <li><a href="../ABOUT/About.html">About Us</a></li>
+            <li><a href="../CONTACT/Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" title="Go to top" aria-label="Go to top" data-no-tts>
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="../shared/tts-click.js"></script>
+  <script src="../shared/back-to-top.js"></script>
+  <script src="../shared/preloader.js"></script>
+  <script>
+    // Animate on Scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Menu Toggle
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('navMenu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      });
+
+      // Animate on Scroll
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+        scrollObserver.observe(element);
+      });
+    });
+  </script>
+</body>
+
+</html>
